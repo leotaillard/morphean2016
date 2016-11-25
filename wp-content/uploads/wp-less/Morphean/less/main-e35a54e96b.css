@@ -1,0 +1,179 @@
+/*
+*
+*
+* Colors
+*
+*/
+/*
+*
+*
+* Margin and padding
+*
+*/
+/*
+*
+*
+* Fonts
+*
+*/
+#masthead {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 666;
+}
+#masthead #site-navigation {
+  background-color: transparent;
+  padding-top: 40px;
+}
+#masthead #site-navigation.top-bar ul {
+  background-color: transparent !important;
+}
+#masthead #site-navigation #menu-main-nav li {
+  border: none;
+}
+#masthead #site-navigation #menu-main-nav li a:hover {
+  background-color: transparent;
+}
+#page {
+  padding-top: 80px !important;
+}
+#page .entry-header {
+  min-height: 350px;
+}
+#page .entry-header .entry-title {
+  text-align: center;
+}
+#footer-container {
+  border-top: none;
+  font-size: 18px !important;
+}
+#footer-container #footer {
+  background: #ffffff;
+  box-shadow: 0 3px 15px rgba(0, 1, 1, 0.1);
+  padding-bottom: 80px;
+  margin-top: 0px;
+  margin-bottom: 80px;
+}
+#footer-container #footer .logo {
+  margin-bottom: 20px;
+}
+#footer-container #footer #menu-social li.facebook a:hover {
+  color: #3b5998 !important;
+}
+#footer-container #footer #menu-social li.twitter a:hover {
+  color: #1dcaff !important;
+}
+#footer-container #footer #menu-social li.linkedin a:hover {
+  color: #0077B5 !important;
+}
+#footer-container #footer #menu-social li.xing a:hover {
+  color: #1A7576 !important;
+}
+#footer-container #footer #menu-social li a {
+  font-size: 1.4rem;
+  padding: 0 0.4rem;
+}
+#footer-container #copyright {
+  text-align: center;
+}
+/* 
+*  
+*	General
+*
+*/
+html {
+  height: 100%;
+}
+body {
+  font-family: 'Radikal_light' !important;
+  font-size: 16px !important;
+  line-height: 1.8;
+  color: #000000;
+  background-color: #f5d73c;
+  width: 100%;
+  height: 100%;
+}
+body p {
+  font-size: 16px !important;
+  line-height: 1.6;
+}
+h1 {
+  font-family: 'Radikal_black' !important;
+  font-size: 5rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000000;
+  margin: 0;
+  padding: 20px 0 20px 0;
+  text-transform: uppercase;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Radikal_bold' !important;
+}
+a,
+.links {
+  cursor: pointer;
+  color: #000000 !important;
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  text-decoration: none;
+}
+a:hover,
+.links:hover,
+a.active,
+.links.active {
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -ms-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  color: #000071 !important;
+  text-decoration: none;
+}
+.button {
+  margin: 1rem 0 1rem 0;
+  background-color: #000071 !important;
+  color: #fff !important;
+}
+.button:hover {
+  background-color: #000000 !important;
+  color: #fff !important;
+}
+/* 
+*  
+*	FONTS
+*
+*/
+@font-face {
+  font-family: 'Radikal_bold';
+  src: url('http://localhost:8888/morphean2016/wp-content/themes/Morphean/less/../assets/fonts/Radikal_bold.eot');
+  src: url('http://localhost:8888/morphean2016/wp-content/themes/Morphean/less/../assets/fonts/Radikal_bold.eot?#iefix') format('embedded-opentype'), url('http://localhost:8888/morphean2016/wp-content/themes/Morphean/less/../assets/fonts/Radikal_bold.woff2') format('woff2'), url('http://localhost:8888/morphean2016/wp-content/themes/Morphean/less/../assets/fonts/Radikal_bold.woff') format('woff'), url('http://localhost:8888/morphean2016/wp-content/themes/Morphean/less/../assets/fonts/Radikal_bold.ttf') format('truetype'), url('http://localhost:8888/morphean2016/wp-content/themes/Morphean/less/../assets/fonts/Radikal_bold.svg#moderatbold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Radikal_black';
+  src: url('http://localhost:8888/morphean2016/wp-content/themes/Morphean/less/../assets/fonts/Radikal_black.eot');
+  src: url('http://localhost:8888/morphean2016/wp-content/themes/Morphean/less/../assets/fonts/Radikal_black.eot?#iefix') format('embedded-opentype'), url('http://localhost:8888/morphean2016/wp-content/themes/Morphean/less/../assets/fonts/Radikal_black.woff2') format('woff2'), url('http://localhost:8888/morphean2016/wp-content/themes/Morphean/less/../assets/fonts/Radikal_black.woff') format('woff'), url('http://localhost:8888/morphean2016/wp-content/themes/Morphean/less/../assets/fonts/Radikal_black.ttf') format('truetype'), url('http://localhost:8888/morphean2016/wp-content/themes/Morphean/less/../assets/fonts/Radikal_black.svg#moderatbold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Radikal_light';
+  src: url('http://localhost:8888/morphean2016/wp-content/themes/Morphean/less/../assets/fonts/Radikal_light.eot');
+  src: url('http://localhost:8888/morphean2016/wp-content/themes/Morphean/less/../assets/fonts/Radikal_light.eot?#iefix') format('embedded-opentype'), url('http://localhost:8888/morphean2016/wp-content/themes/Morphean/less/../assets/fonts/Radikal_light.woff2') format('woff2'), url('http://localhost:8888/morphean2016/wp-content/themes/Morphean/less/../assets/fonts/Radikal_light.woff') format('woff'), url('http://localhost:8888/morphean2016/wp-content/themes/Morphean/less/../assets/fonts/Radikal_light.ttf') format('truetype'), url('http://localhost:8888/morphean2016/wp-content/themes/Morphean/less/../assets/fonts/Radikal_light.svg#moderatbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

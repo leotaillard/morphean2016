@@ -1,0 +1,40 @@
+@import "mixins.less";
+@import "spec.less";
+
+#footer-container {
+	border-top: none;
+	#footer {
+		.logo{
+			margin-bottom: 20px;
+		}
+		background: @white;
+		box-shadow: 0 3px 15px rgba(0, 1, 1, 0.1);
+		padding-bottom: @padding-bottom;
+		margin-top: @margin-top;
+		margin-bottom: @margin-bottom;
+		#menu-social {
+			li {
+				&.facebook a:hover {
+					color: #3b5998 !important;
+				}
+				&.twitter a:hover {
+					color: #1dcaff !important;
+				}
+				&.linkedin a:hover {
+					color: #0077B5 !important;
+				}
+				&.xing a:hover {
+					color: #1A7576 !important;
+				}
+				a {
+					font-size: 1.4rem;
+					padding: 0 0.4rem;
+				}
+			}
+		}
+	}
+	#copyright {
+		padding-bottom: @padding-bottom;
+		text-align: center;
+	}
+}

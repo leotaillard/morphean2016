@@ -1,0 +1,115 @@
+@import "mixins.less";
+@import "spec.less";
+
+@import "header.less";
+@import "page.less";
+@import "footer.less";
+
+@import "form.less";
+
+/* 
+*  
+*	General
+*
+*/
+html {
+    height: 100%;
+}
+body {
+	font-family: '@{fontnameMedium}' !important;
+	font-size: 16px !important;
+	line-height: 1.8;
+	color: @black;
+	background-color: @yellow;
+	width: 100%;
+	height: 100%;
+	// position: relative;
+}
+body p {
+    font-size: 16px !important;
+    line-height: 1.6;
+    strong {
+        font-family: '@{fontnameBold}' !important;
+    }
+}
+h1 {
+    font-family: '@{fontnameHeavy}' !important;
+    font-size: 4rem;
+    line-height: 1;
+}
+h1,h2,h3,h4,h5,h6 {
+	color:@mainTitle;
+	margin: 0;
+	padding:20px 0 20px 0;
+	text-transform: uppercase;
+}
+h2,h3,h4,h5,h6 {
+    font-family: '@{fontnameBold}' !important;
+}
+a, .links {
+	cursor: pointer;
+	color: @mainLink !important;
+	.transition(color 0.25s ease);
+	text-decoration: none;
+	&:hover, &.active {
+		.transition(color 0.25s ease);
+		color: @mainLinkHover !important;
+		text-decoration: none;
+	}
+}
+.button {
+    margin: 1rem 0 1rem 0;
+    background-color: @mainLinkHover !important;
+    color: #fff !important;
+	&:hover{
+	    background-color: @mainLink !important;
+	    color: #fff !important;
+	}
+}
+.shadow {
+    box-shadow: 0 3px 15px rgba(0, 1, 1, 0.1);
+}
+
+
+/* 
+*  
+*	FONTS
+*
+*/ 
+
+@font-face {
+    font-family: '@{fontnameBold}';
+    src: url('../assets/fonts/@{fontnameBold}.eot');
+    src: url('../assets/fonts/@{fontnameBold}.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/@{fontnameBold}.woff2') format('woff2'),
+         url('../assets/fonts/@{fontnameBold}.woff') format('woff'),
+         url('../assets/fonts/@{fontnameBold}.ttf') format('truetype'),
+         url('../assets/fonts/@{fontnameBold}.svg#moderatbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: '@{fontnameHeavy}';
+    src: url('../assets/fonts/@{fontnameHeavy}.eot');
+    src: url('../assets/fonts/@{fontnameHeavy}.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/@{fontnameHeavy}.woff2') format('woff2'),
+         url('../assets/fonts/@{fontnameHeavy}.woff') format('woff'),
+         url('../assets/fonts/@{fontnameHeavy}.ttf') format('truetype'),
+         url('../assets/fonts/@{fontnameHeavy}.svg#moderatbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: '@{fontnameMedium}';
+    src: url('../assets/fonts/@{fontnameMedium}.eot');
+    src: url('../assets/fonts/@{fontnameMedium}.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/@{fontnameMedium}.woff2') format('woff2'),
+         url('../assets/fonts/@{fontnameMedium}.woff') format('woff'),
+         url('../assets/fonts/@{fontnameMedium}.ttf') format('truetype'),
+         url('../assets/fonts/@{fontnameMedium}.svg#moderatbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

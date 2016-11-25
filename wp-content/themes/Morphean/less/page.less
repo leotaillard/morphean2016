@@ -1,0 +1,108 @@
+@import "mixins.less";
+@import "spec.less";
+#featured-hero {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+	height: 100%;
+	.cover();
+}
+#page {
+	.entry-header {
+		padding: 100px 0;
+		.entry-title {
+			text-align: center;
+		}
+	}
+	.entry-subtitle-content {
+		box-shadow: 0 3px 15px rgba(0, 1, 1, 0.1);
+		padding-top: @padding-top;
+		padding-bottom: @padding-bottom;
+		margin-top: @margin-top;
+		margin-bottom: @margin-bottom;
+		background: @black;
+		color: @yellow;
+		text-align: center;
+		h2,h3 {
+			color: @yellow;
+		}
+		a {
+			color: @white !important;
+		}
+	}
+	.entry-content {
+	}
+}
+
+/*
+*
+*
+* Page Awards
+*
+*/
+
+#awards {
+	padding-top: @padding-top*2;
+	margin-top: @margin-top;
+	margin-bottom: @margin-bottom;
+	.award {
+		background: @white;
+		padding-top: @padding-top;
+		padding-bottom: @padding-bottom;
+		margin-top: @margin-top;
+		margin-bottom: @margin-bottom;
+		text-align: center;
+	}
+}
+/*
+*
+*
+* Page Careers
+*
+*/
+#jobs {
+	.apply-to {
+		background: @red;
+		color: @white;
+		h3 {
+			color: @white;
+		}
+		padding-top: @padding-top;
+		padding-bottom: @padding-bottom;
+		margin-top: @margin-top;
+		margin-bottom: @margin-bottom;
+		text-align: center;
+	}
+}
+.accordion {
+	background: @white;
+	margin-bottom: @margin-bottom;
+	li {
+		&:last-child:not(.is-active)>.accordion-title {
+			border: none;
+		}
+
+		&.is-active {
+			a.accordion-title {
+				background: @blue;
+				color: @white !important;
+			}
+		}
+		a.accordion-title {
+	        font-family: '@{fontnameBold}' !important;
+			font-size: 1rem;
+			border: none;
+			&:hover, &:focus {
+				background: @blue;
+				color: @white !important;
+			}
+		}
+		.accordion-content {
+			border: none;
+			background: @white;
+			color: @black !important;
+		}
+	}
+}

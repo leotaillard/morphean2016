@@ -1,0 +1,35 @@
+@import "mixins.less";
+@import "spec.less";
+
+#masthead {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 666;
+	.logo {
+		padding-left: 1rem;
+		img {
+			max-width: 75%;
+		}
+	}
+	#site-navigation {
+		background-color: transparent;
+		padding-top: 40px;
+		&.top-bar {
+			ul {
+				background-color: transparent !important;
+			}
+		}
+		#menu-main-nav {
+			li {
+				border: none;
+				a {
+					&:hover {
+						background-color: transparent;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+@import "mixins.less";
+@import "spec.less";
+
+.gform_body {
+	.gfield_label {
+		font-weight: normal !important;
+	}
+	.gfield_required {
+		color: @red !important;
+	}
+	.ginput_container {
+		input, textarea {
+			border: none;
+			width: 100% !important;
+			box-shadow: 0 3px 15px rgba(0, 1, 1, 0.1);
+			padding-left: 10px;
+		}
+	}
+	.gfield_error {
+		.gfield_label, .gfield_required, .validation_message {
+			color: @red !important;
+		}
+	}
+}
+.validation_error {
+	color: @white !important;
+	border-top: none !important;
+	border-bottom: none !important;
+	background: @red;
+	box-shadow: 0 3px 15px rgba(0, 1, 1, 0.1);
+}
