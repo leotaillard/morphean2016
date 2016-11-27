@@ -1,0 +1,109 @@
+#usecase {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+	.entry-header {
+		padding: 100px 0;
+		.entry-title, .entry-subtitle {
+			text-align: center;
+		}
+		.entry-subtitle {
+			font-family: '@{fontnameMedium}' !important;
+		}
+	}
+	.entry-showcase {
+		// margin-bottom: @margin-bottom;
+	}
+	.entry-showcase-content {
+		box-shadow: 0 3px 15px rgba(0, 1, 1, 0.1);
+		padding-top: @padding-top;
+		padding-bottom: @padding-bottom;
+		margin-top: @margin-top;
+		margin-bottom: @margin-bottom;
+		background: @black;
+		color: @yellow;
+		text-align: center;
+		h2,h3 {
+			color: @yellow;
+		}
+		a {
+			color: @white !important;
+		}
+	}
+	.entry-content {
+		margin-bottom: @padding-bottom;
+	}
+	#entry-assets-usecase {
+		padding-top: @padding-top;
+		// padding-bottom: @padding-bottom;
+		margin-top: @margin-top;
+		margin-bottom: @margin-bottom;
+		.entry-asset-usecase {
+			margin-top: @margin-top;
+			margin-bottom: @margin-bottom/2;
+			.asset-image {
+				text-align: center;
+				background: @white;
+				padding-top: 1rem !important;
+				padding-bottom: 1rem !important;
+				position: relative;
+				&:after {
+				    content:'';
+				    position: absolute;
+				    top: 50%;
+				    left: 100%;
+				    margin-top: -7.5px;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 7.5px 0 7.5px 7.5px;
+					border-color: transparent transparent transparent #fff;
+					z-index: 100;
+				}
+			}
+			.asset-content {
+				background: @blue;
+				font-size: 0.8rem !important;
+				line-height: 1.3 !important;
+				padding-top: 1rem !important;
+				padding-bottom: 1rem !important;
+				color: white !important;
+			}
+		}
+	}
+	#entry-spotlight-usecase {
+		padding-top: @padding-top;
+		// padding-bottom: @padding-bottom;
+		margin-top: @margin-top;
+		margin-bottom: @margin-bottom;
+		.entry-spotlight {
+			margin-bottom: @margin-bottom;
+		}
+		.entry-spotlight-content {
+			strong {
+				text-transform: uppercase;
+			}
+			color: @blue !important;
+			box-shadow: 0 3px 15px rgba(0, 1, 1, 0.1);
+			padding-top: @padding-top;
+			padding-bottom: @padding-bottom;
+			margin-top: @margin-top;
+			margin-bottom: @margin-bottom;
+			background: @skyblue;
+			text-align: center;
+			h2,h3 {
+				color: @yellow;
+			}
+			a {
+				color: @white !important;
+			}
+		}
+	}
+	#entry-howtos-usecase {
+		padding-top: @padding-top;
+		padding-bottom: @padding-bottom;
+		margin-top: @margin-top;
+		margin-bottom: @margin-bottom;
+	}
+}

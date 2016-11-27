@@ -14,8 +14,9 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 
 	// Enqueue the main Stylesheet.
 	wp_enqueue_style( 'main-stylesheet', get_template_directory_uri() . '/assets/stylesheets/foundation.css', array(), '2.6.1', 'all' );
-	wp_enqueue_style( 'main-css', get_stylesheet_directory_uri() . '/less/main.less', array(), '1.0.0', 'all' );
+	wp_enqueue_style( 'main', get_stylesheet_directory_uri() . '/less/main.less', array(), '1.0.0', 'all' );
 	wp_enqueue_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css', array(), '1.0.0', 'all' );
+	wp_enqueue_style( 'owl-carousel', get_stylesheet_directory_uri() . '/assets/stylesheets/owl.carousel.css', array(), '1.0.0', 'all' );
 
 	// Deregister the jquery version bundled with WordPress.
 	wp_deregister_script( 'jquery' );
@@ -26,6 +27,7 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 	// If you'd like to cherry-pick the foundation components you need in your project, head over to gulpfile.js and see lines 35-54.
 	// It's a good idea to do this, performance-wise. No need to load everything if you're just going to use the grid anyway, you know :)
 	wp_enqueue_script( 'foundation', get_template_directory_uri() . '/assets/javascript/foundation.js', array('jquery'), '2.6.1', true );
+	wp_enqueue_script( 'owl-carousel', get_template_directory_uri() . '/assets/javascript/vendor/owl-carousel/owl.carousel.min.js', array('jquery'), '2.0.0', true );
 
 	}
 

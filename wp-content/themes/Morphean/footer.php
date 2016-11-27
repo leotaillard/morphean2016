@@ -24,13 +24,13 @@
 						<div class="row">
 							<div class="small-12 medium-4 columns">
 								<p>
-									<?php the_field('adresse_morphean', 'option'); ?></br>
-									<?php the_field('npa_morphean', 'option'); ?> <?php the_field('ville_morphean', 'option'); ?></br>
+									<?php the_field('adresse_morphean', 'option'); ?><br>
+									<?php the_field('npa_morphean', 'option'); ?> <?php the_field('ville_morphean', 'option'); ?><br>
 									<?php the_field('pays_morphean', 'option'); ?>
 								</p>
 							</div>
 							<div class="small-12 medium-4 columns">
-									<a href="callto:<?php the_field('telephone_morphean', 'option'); ?>"><?php the_field('telephone_morphean', 'option'); ?></a></br>
+									<a href="callto:<?php the_field('telephone_morphean', 'option'); ?>"><?php the_field('telephone_morphean', 'option'); ?></a><br>
 									<a href="mailto:<?php the_field('email_morphean', 'option'); ?>"><?php the_field('email_morphean', 'option'); ?></a>
 							</div>
 							<div class="small-12 medium-4 columns">

@@ -36,6 +36,7 @@
 		</div>
 
 		<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
+			<div class="row">
 			<div class="top-bar-left">
 				<div class="logo">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php the_field('logo_morphean', 'option'); ?>" alt=""></a>
@@ -47,6 +48,7 @@
 				<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) : ?>
 					<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
 				<?php endif; ?>
+			</div>
 			</div>
 		</nav>
 	</header>

@@ -1,41 +1,61 @@
 <?php
 /**
- * The template for displaying all single posts and attachments
+ * The template for displaying pages
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages and that
+ * other "pages" on your WordPress site will use a different template.
  *
  * @package FoundationPress
  * @since FoundationPress 1.0.0
  */
 
-get_header(); ?>
+ get_header(); ?>
 
-<?php get_template_part( 'template-parts/featured-image' ); ?>
+ <?php get_template_part( 'template-parts/featured-image' ); ?>
 
-<div id="single-post" role="main">
-
-<?php do_action( 'foundationpress_before_content' ); ?>
-<?php while ( have_posts() ) : the_post(); ?>
-	<article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
-		<header>
-			<h1 class="entry-title"><?php the_title(); ?></h1>
-			<?php foundationpress_entry_meta(); ?>
-		</header>
-		<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
-		<div class="entry-content">
-			<?php the_content(); ?>
-			<?php edit_post_link( __( 'Edit', 'foundationpress' ), '<span class="edit-link">', '</span>' ); ?>
+ <div id="page" role="main">
+ <?php while ( have_posts() ) : the_post(); ?>
+ <?php
+	$classes = array(
+		'small-12',
+		'medium-8',
+		'small-centered',
+		'columns',
+		'entry-content'
+	);
+ ?>
+	<header class="entry-header">
+		<div class="row">
+			<div class="small-12 medium-6 small-centered columns">
+				<h1 class="entry-title"><?php the_title(); ?></h1>
+			</div>
 		</div>
-		<footer>
-			<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
-			<p><?php the_tags(); ?></p>
-		</footer>
-		<?php the_post_navigation(); ?>
-		<?php do_action( 'foundationpress_post_before_comments' ); ?>
-		<?php comments_template(); ?>
-		<?php do_action( 'foundationpress_post_after_comments' ); ?>
-	</article>
-<?php endwhile;?>
+	</header>
+	<?php if (get_field('sous-titre_page')) : ?>
+		<div class="entry-subtitle">
+			<div class="row">
+				<div class="small-12 medium-10 small-centered columuns entry-subtitle-content">
+					<div class="row">
+						<div class="small-10 small-centered columns">
+							<?php the_field('sous-titre_page'); ?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<?php endif; ?>
 
-<?php do_action( 'foundationpress_after_content' ); ?>
-<?php get_sidebar(); ?>
-</div>
-<?php get_footer();
+	   <article <?php post_class($classes) ?> id="post-<?php the_ID(); ?>">
+       <div class="entry-content">
+           <?php the_content(); ?>
+       </div>
+	   <?php get_template_part( 'template-parts/awards' ); ?> <!-- AWARDS -->
+	   <?php get_template_part( 'template-parts/jobs' ); ?> <!-- Jobs -->
+   </article>
+ <?php endwhile;?>
+
+
+ </div>
+
+ <?php get_footer();
