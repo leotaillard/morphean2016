@@ -83,44 +83,47 @@
 					}			
 				}
 
-				.owl-item {
-					&:nth-child(n) {
-						.full{
-							background: fade(@green, 80%);
-						}
-					}
-					&:nth-child(2n) {
-						.full{
-							background: fade(@skyblue, 80%);
-						}
-					}
-					&:nth-child(3n) {
-				    	color: @white !important;
-					    a {
-					    	color: @white !important;
-					    } 
-						.full{
-							background: fade(@blue, 80%);
-						}
-					}
-					&:nth-child(4n) {
-				    	color: @black !important;
-					    a {
-					    	color: @black !important;
-					    } 
-						.full{
-							background: fade(@yellow, 80%);
-						}
-					}
-					&:nth-child(5) {
-						.full{
-							background: fade(@red, 80%);
-						}
-					}
-				}
 				.owl-use-case {
 					a {
 						display: inline-block !important;
+					}
+					&.blue-usecase {
+						.full {
+							background: fade(@blue, 80%);
+						}
+						a {
+							color: @white !important;
+						}
+					}
+					&.white-usecase {
+						.full {
+							background: fade(@white, 80%);
+						}
+					}
+					&.yellow-usecase {
+						.full {
+							background: fade(@yellow, 80%);
+						}
+					}
+					&.green-usecase {
+						.full {
+							background: fade(@green, 80%);
+						}
+					}
+					&.skyblue-usecase {
+						.full {
+							background: fade(@skyblue, 80%);
+						}
+					}
+					&.black-usecase {
+						.full {
+							background: fade(@black, 80%);
+						}
+					}
+					&.red-usecase {
+						.full {
+							background: fade(@red, 80%);
+						}
 					}
 					.cover();
 					.full {

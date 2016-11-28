@@ -14,7 +14,7 @@ $the_query = new WP_Query( $args ); ?>
     <div class="owl-carousel">
     	
     <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-          <div class="owl-use-case shadow" style="background-image:url('<?php the_field('image_usecase'); ?>')">
+          <div class="owl-use-case shadow <?php the_field('couleur_usecase'); ?>" style="background-image:url('<?php the_field('image_usecase'); ?>')">
           	<div class="owl-use-case-content">
 	          	<a href="<?php the_permalink(); ?>" class="title"><?php the_title(); ?></a>
 	          	<a href="<?php the_permalink(); ?>" class="discover"><?php _e( 'Discover more >','morphean' ); ?></a>

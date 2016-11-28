@@ -9,7 +9,8 @@
 	z-index: 666;
 	.logo {
 		img {
-			max-width: 75%;
+			max-width: 100px;
+			height: 50px;
 		}
 	}
 	#site-navigation {
@@ -21,13 +22,32 @@
 			}
 		}
 		#menu-main-nav {
+			.dropdown {
+				background-color: @white !important;
+				box-shadow: 0 3px 15px rgba(0, 1, 1, 0.1);
+				z-index: 123;
+				li {
+					a {
+						padding-top: 1rem;
+						&:last-child {
+							padding-right: 1rem !important;
+						}
+					}
+					text-align: right;
+				}
+			}
 			li {
 				border: none;
 				&:last-child a{
 					padding-right: 0 !important;
 				}
 				a {
+					height: auto;
+					padding-top: 0;
+					padding-bottom: 1rem;
 					text-transform: uppercase;
+					font-weight: inherit;
+					letter-spacing: 0.03rem;
 				}
 				&.active > a, &.current-menu-item a{
 				        font-family: '@{fontnameBold}' !important;

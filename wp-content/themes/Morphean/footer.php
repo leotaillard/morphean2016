@@ -16,7 +16,9 @@
 				<div class="row logo">
 					<div class="small-12 medium-1 columns">&nbsp;</div>
 					<div class="small-12 medium-11 columns">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php the_field('logo_morphean', 'option'); ?>" alt=""></a>
+						<div class="logo-size">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php the_field('logo_morphean_footer', 'option'); ?>" alt=""></a>
+						</div>
 					</div>
 				</div>
 				<div class="row">
