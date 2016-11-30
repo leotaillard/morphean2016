@@ -1,0 +1,119 @@
+@import "mixins.less";
+@import "spec.less";
+
+#options-tkc{
+	margin-bottom: @margin-bottom;
+	.option-tkc {
+		margin-top: @margin-top;
+		margin-bottom: @margin-bottom;
+		.image-tkc {
+			text-align: center;
+			background: @white;
+			padding-top: 1rem !important;
+			padding-bottom: 1rem !important;
+			position: relative;
+			@media screen and (max-width:40rem){
+				img{
+					max-width: 60px;
+				}
+			}
+			&:after {
+			    content:'';
+			    position: absolute;
+			    top: 50%;
+			    left: 100%;
+			    margin-top: -7.5px;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 7.5px 0 7.5px 7.5px;
+				border-color: transparent transparent transparent #fff;
+				z-index: 100;
+			}
+		}
+		.content-tkc {
+			padding-bottom: @padding-bottom/2;
+			background: @blue;
+			color: @white;
+			h2 {
+				font-size: 1rem;
+				color: @white;
+			}
+		}
+	}
+}
+#image-tkc {
+	text-align: center;
+	margin-bottom: @margin-bottom;
+	.image-tkc {
+		padding-top: @padding-top;
+		padding-bottom: @padding-bottom;
+		background: @white;
+	}
+}
+#sous-titre-tkc {
+	padding-top: @padding-top;
+	padding-bottom: @padding-bottom;
+	.subtitle_tkc {
+		box-shadow: 0 3px 15px rgba(0, 1, 1, 0.1);
+		padding-top: @padding-top;
+		padding-bottom: @padding-bottom;
+		margin-top: @margin-top;
+		margin-bottom: @margin-bottom;
+		background: @black;
+		color: @yellow;
+		text-align: center;
+		h2,h3 {
+			color: @yellow;
+		}
+		a {
+			color: @white !important;
+		}
+	}
+}
+#domaines-tkh{
+	margin-bottom: @margin-bottom;
+	.domaine-tkc {
+		margin-top: @margin-top;
+		margin-bottom: @margin-bottom;
+		.image-domaine-tkc {
+			text-align: center;
+			img {
+				max-width: 80px;
+			}
+			background: @white;
+			padding-top: 1rem !important;
+			padding-bottom: 1rem !important;
+			position: relative;
+			&:after {
+			    content:'';
+			    position: absolute;
+			    top: 50%;
+			    left: 100%;
+			    margin-top: -7.5px;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 7.5px 0 7.5px 7.5px;
+				border-color: transparent transparent transparent #fff;
+				z-index: 100;
+			}
+		}
+		.content-domaine-tkc {
+			padding-bottom: @padding-bottom/2;
+			background: @blue;
+			color: @white;
+			h2 {
+				font-size: 1rem;
+				color: @white;
+				padding-bottom: 0.3rem;
+			}
+			h3 {
+				font-size: 1rem;
+				color: @white;
+				font-family: '@{fontnameMedium}' !important;
+				padding-top: 0.3rem;
+			}
+		}
+	}
+}
