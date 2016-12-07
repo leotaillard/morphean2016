@@ -17,6 +17,7 @@ return array(
     'WPML_ACF_Processed_Data' => $baseDir . '/classes/class-wpml-acf-processed-data.php',
     'WPML_ACF_Relationship_Field' => $baseDir . '/classes/class-wpml-acf-relationship-field.php',
     'WPML_ACF_Repeater_Field' => $baseDir . '/classes/class-wpml-acf-repeater-field.php',
+    'WPML_ACF_Requirements' => $baseDir . '/classes/class-wpml-acf-requirements.php',
     'WPML_ACF_Taxonomy_Field' => $baseDir . '/classes/class-wpml-acf-taxonomy-field.php',
     'WPML_ACF_Term_Id' => $baseDir . '/classes/class-wpml-acf-term-id.php',
     'WPML_ACF_Term_Ids' => $baseDir . '/classes/class-wpml-acf-term-ids.php',

@@ -1,3 +1,9 @@
+# 0.3
+
+* added support for ACF Pro
+* convert() method now returns original object id if translation is missing
+* fixed not working repeater field
+
 # 0.2
 
 * Moved fix about xliff support from WPML Translation Management to this plugin. If you use xliff files to send documents 

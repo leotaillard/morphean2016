@@ -5,12 +5,16 @@
  */
 class WPML_ACF {
 
+	private $WPML_ACF_Requirements;
+
 	/**
 	 * @return WPML_ACF_Worker
 	 */
 	public function init_worker() {
 		global $wpdb;
 		add_action( 'wpml_loaded', array( $this, 'init_acf_xliff' ) );
+
+		$this->WPML_ACF_Requirements = new WPML_ACF_Requirements();
 
 		return $this->init_duplicated_post( $wpdb );
 	}

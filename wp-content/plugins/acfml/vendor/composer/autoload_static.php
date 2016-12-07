@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit79e3239d0c00dc070106e49d0ce67814
+class ComposerStaticInit9bb02db6ab5cae50d909bc2e19e82e89
 {
     public static $prefixesPsr0 = array (
         'x' => 
@@ -28,6 +28,7 @@ class ComposerStaticInit79e3239d0c00dc070106e49d0ce67814
         'WPML_ACF_Processed_Data' => __DIR__ . '/../..' . '/classes/class-wpml-acf-processed-data.php',
         'WPML_ACF_Relationship_Field' => __DIR__ . '/../..' . '/classes/class-wpml-acf-relationship-field.php',
         'WPML_ACF_Repeater_Field' => __DIR__ . '/../..' . '/classes/class-wpml-acf-repeater-field.php',
+        'WPML_ACF_Requirements' => __DIR__ . '/../..' . '/classes/class-wpml-acf-requirements.php',
         'WPML_ACF_Taxonomy_Field' => __DIR__ . '/../..' . '/classes/class-wpml-acf-taxonomy-field.php',
         'WPML_ACF_Term_Id' => __DIR__ . '/../..' . '/classes/class-wpml-acf-term-id.php',
         'WPML_ACF_Term_Ids' => __DIR__ . '/../..' . '/classes/class-wpml-acf-term-ids.php',
@@ -41,8 +42,8 @@ class ComposerStaticInit79e3239d0c00dc070106e49d0ce67814
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixesPsr0 = ComposerStaticInit79e3239d0c00dc070106e49d0ce67814::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit79e3239d0c00dc070106e49d0ce67814::$classMap;
+            $loader->prefixesPsr0 = ComposerStaticInit9bb02db6ab5cae50d909bc2e19e82e89::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit9bb02db6ab5cae50d909bc2e19e82e89::$classMap;
 
         }, null, ClassLoader::class);
     }

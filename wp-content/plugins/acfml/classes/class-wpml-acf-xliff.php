@@ -27,27 +27,6 @@ class WPML_ACF_Xliff {
 	public function init_hooks() {
 		add_action( 'save_post', array( $this, 'save_post' ), WPML_PRIORITY_BEFORE_EVERYTHING );
 		add_action( 'acf/update_field_group', array( $this, 'update_acf_field_group' ) );
-		$this->check_wpml_tm_version();
-	}
-
-	private function check_wpml_tm_version() {
-		$wp_api = $this->sitepress->get_wp_api();
-
-		$tm_version = $wp_api->constant( 'WPML_TM_VERSION' );
-		$is_tm_old  = $wp_api->version_compare( $tm_version, '2.2.4.1', '<' );
-
-		if ( $wp_api->defined( 'WPML_TM_VERSION' ) && $is_tm_old ) {
-			add_action( 'admin_notices', array( $this, 'old_wpml_tm_notice' ) );
-		}
-	}
-
-	public function old_wpml_tm_notice() {
-		?>
-		<div class="notice notice-error is-dismissible">
-			<p><?php _e( 'You are using old version of WPML Translation Management. Please update to version 2.2.4.1 or newer.', 'acfml' ); ?></p>
-		</div>
-		<?php
-
 	}
 
 	public function save_post() {
